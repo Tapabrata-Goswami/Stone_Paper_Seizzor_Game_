@@ -8,14 +8,14 @@ int main(){
 
     printf("\n\n###########################################\n");
     printf("#                                         #\n");
-    printf("#        STONE    PAPER   SEIZZOR         #\n");
+    printf("#        STONE    PAPER   SCISSORS         #\n");
     printf("#                                         #\n");
     printf("###########################################\n\n");
 
     printf("#################  Game Rule  #####################\n");
     printf("#                                                 #\n");
-    printf("# How to choose --------> Stone, Paper, Seizzor   #\n");
-    printf("# S ---> Stone || P ---> Paper || E ---> Seizzor #\n");
+    printf("# How to choose --------> Stone, Paper, Scissors  #\n");
+    printf("# S ---> Stone || P ---> Paper || E ---> Scissors #\n");
     printf("#                                                 #\n");
     printf("###################################################\n\n");
 
@@ -38,7 +38,7 @@ int main(){
     }
     
 
-    printf("# Your Turns, Choose ---> STONE(S) || PAPER(P) || SEIZZOR(E). \n\n-->>");
+    printf("# Your Turns, Choose ---> STONE(S) || PAPER(P) || SCISSORS(E). \n\n-->>");
     scanf("%c", &you);
 
     int resultes = value( you, computer);
