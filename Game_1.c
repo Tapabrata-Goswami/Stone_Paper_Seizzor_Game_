@@ -65,14 +65,14 @@ int main()
 int value(char you, char computer)
 {
 
-    // For draw action -- > R R / SE SE / P P
+    // For Draw action -- > R R / SE SE / P P
 
     if (you == computer)
     {
         return 0;
     }
 
-    // For draw action -- > S P | P S /  / P P
+    // For Win/ Lose action -- > S P | P E | E S / E P | P S | S E
 
     if (you == 'S' && computer == 'P')
     {
