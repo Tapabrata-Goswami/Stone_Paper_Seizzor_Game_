@@ -1,4 +1,4 @@
-#include <stdio.h>
+ #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 
@@ -6,9 +6,13 @@ int value (char you, char computer);
 
 int main(){
 
+
+
+
+
     printf("\n\n###########################################\n");
     printf("#                                         #\n");
-    printf("#        STONE    PAPER   SCISSORS         #\n");
+    printf("#        STONE    PAPER   SCISSORS        #\n");
     printf("#                                         #\n");
     printf("###########################################\n\n");
 
@@ -21,6 +25,11 @@ int main(){
 
     // return 1 ---> you Win / return 0 ---> Draw / return -1 ---> you lose
 
+    // char name[40];
+    // printf("What is your Name\n-->> ");
+    // scanf("%c", &name);
+
+
     char you;
     char computer;
 
@@ -29,14 +38,14 @@ int main(){
 
     if(computer<= 3){
         computer = 'S';
-        
+
     }else if (computer>=4 && computer<=6)
     {
         computer = 'P';
     }else{
         computer = 'E';
     }
-    
+
 
     printf("# Your Turns, Choose ---> STONE(S) || PAPER(P) || SCISSORS(E). \n\n-->>");
     scanf("%c", &you);
@@ -53,8 +62,16 @@ int main(){
     {
         printf("-->> YOU LOSE ! BETTER LUCK NEXT TIME\n");
     }
-    
-    
+
+
+
+// int i;
+// do
+//   {
+
+//     printf("-->> YOU LOSE ! BETTER LUCK NEXT TIME\n -->");
+//     scanf("%d", &i);
+//     } while (i == 2);
 
     return 0;
 }
@@ -64,7 +81,7 @@ int main(){
 
 int value (char you, char computer){
 
-    // For draw action -- > R R / SE SE / P P 
+    // For draw action -- > R R / SE SE / P P
 
     if(you==computer){
         return 0;
@@ -97,5 +114,5 @@ int value (char you, char computer){
     {
         return 1;
     }
-     
+
 }
